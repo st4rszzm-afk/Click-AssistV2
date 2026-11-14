@@ -96,7 +96,7 @@ class $modify(AssistLayer, GJBaseGameLayer) {
         auto mod = Mod::get();
         auto f = m_fields.self();
 
-        if (!isPlayer1 || PlayLayer::get() != this || !mod->getSettingValue<bool>("enabled")
+      if (!isPlayer1 || static_cast<GJBaseGameLayer*>(PlayLayer::get()) != static_cast<GJBaseGameLayer*>(this) || !mod->getSettingValue<bool>("enabled")
             || !vehicleOn(currentMode())) {
             return GJBaseGameLayer::handleButton(down, button, isPlayer1);
         }
