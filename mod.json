@@ -1,0 +1,30 @@
+{
+  "geode": "5.11.1",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081",
+    "mac": "2.2081",
+    "ios": "2.2081"
+  },
+  "id": "st4rszzm-afk.clickassist",
+  "name": "Click Assist",
+  "version": "v1.2.0",
+  "developer": "st4rszzm-afk",
+  "description": "Esquiva pinchos, bloques y rampas con todos los vehiculos. Solo para practicar.",
+  "settings": {
+    "enabled": { "type": "bool", "name": "Activado", "default": true },
+    "draw": { "type": "bool", "name": "Dibujar hitboxes", "default": true },
+    "blocks": { "type": "bool", "name": "Reconocer bloques", "default": true },
+    "slopes": { "type": "bool", "name": "Reconocer rampas", "default": true },
+    "window": { "type": "int", "name": "Ventana (ms)", "default": 250, "min": 0, "max": 600 },
+    "margin": { "type": "float", "name": "Margen", "default": 0, "min": -5, "max": 15 },
+    "veh-cube":   { "type": "bool", "name": "Cubo", "default": true },
+    "veh-ship":   { "type": "bool", "name": "Nave", "default": true },
+    "veh-ball":   { "type": "bool", "name": "Bola", "default": true },
+    "veh-ufo":    { "type": "bool", "name": "UFO", "default": true },
+    "veh-wave":   { "type": "bool", "name": "Wave", "default": true },
+    "veh-robot":  { "type": "bool", "name": "Robot", "default": true },
+    "veh-spider": { "type": "bool", "name": "Arana", "default": true },
+    "veh-swing":  { "type": "bool", "name": "Swing", "default": true }
+  }
+}
