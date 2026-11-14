@@ -133,7 +133,7 @@ class $modify(AssistLayer, GJBaseGameLayer) {
         auto mod = Mod::get();
         auto f = m_fields.self();
 
-        if (PlayLayer::get() != this || !m_player1 || !mod->getSettingValue<bool>("enabled")) {
+      if (static_cast<GJBaseGameLayer*>(PlayLayer::get()) != static_cast<GJBaseGameLayer*>(this) || !m_player1 || !mod->getSettingValue<bool>("enabled")) {
             return GJBaseGameLayer::update(dt);
         }
         if (!f->cached) cacheLevel();
